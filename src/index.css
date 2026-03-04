@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Covered+By+Your+Grace&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,14 +7,15 @@
 }
 
 :root {
-  --bg: #fafaf8;
-  --surface: #f5f4f0;
-  --border: #e8e6e0;
-  --text: #1a1a18;
-  --text-secondary: #6b6b68;
-  --text-muted: #9b9b98;
-  --max-w: 860px;
-  --nav-h: 60px;
+  --bg: #ffffff;
+  --text: #0a0a0a;
+  --text-secondary: #555555;
+  --text-muted: #999999;
+  --accent: #0037ff;
+  --border: #e8e8e8;
+  --surface: #f7f7f7;
+  --max-w: 1100px;
+  --nav-h: 72px;
 }
 
 html {
@@ -41,8 +42,8 @@ img {
 }
 
 ::selection {
-  background: #1a1a18;
-  color: #fafaf8;
+  background: #0037ff;
+  color: #ffffff;
 }
 
 ::-webkit-scrollbar { width: 6px; }

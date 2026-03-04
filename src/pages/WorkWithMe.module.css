@@ -1,27 +1,38 @@
-.hero {
+.page {
   padding: 120px 40px 100px;
 }
 
 .inner {
-  max-width: var(--max-w);
+  max-width: 700px;
   margin: 0 auto;
 }
 
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
 .heading {
-  font-family: 'Inter', sans-serif;
   font-size: clamp(36px, 5vw, 64px);
   font-weight: 600;
-  line-height: 1.15;
   letter-spacing: -0.02em;
+  line-height: 1.1;
   color: var(--text);
-  max-width: 780px;
+  margin-bottom: 24px;
+}
+
+.sub {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.7;
   margin-bottom: 48px;
 }
 
 .cta {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   color: var(--accent);
   transition: opacity 0.15s;
 }
@@ -31,5 +42,5 @@
 }
 
 @media (max-width: 640px) {
-  .hero { padding: 60px 20px 60px; }
+  .page { padding: 60px 20px; }
 }

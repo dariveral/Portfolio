@@ -1,0 +1,76 @@
+.page {
+  padding: 80px 40px 100px;
+}
+
+.inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 60px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .page { padding: 60px 20px; }
+  .content { grid-template-columns: 1fr; gap: 40px; }
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bio p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.extras {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.extraCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.extraCard:hover {
+  border-color: var(--text);
+  background: var(--surface);
+}
+
+.extraTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.extraArrow {
+  color: var(--text-muted);
+  transition: transform 0.15s;
+}
+
+.extraCard:hover .extraArrow {
+  transform: translateX(4px);
+}
