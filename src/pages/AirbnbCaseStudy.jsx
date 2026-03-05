@@ -51,13 +51,11 @@ export default function AirbnbCaseStudy() {
       <section className={styles.section}>
         <div className={styles.inner}>
           <div className={styles.textBlock}>
-            <span className={styles.sectionLabel}>The Problem</span>
-            <h2 className={styles.sectionHeading}>Landscape mode is an afterthought in most mobile apps</h2>
             <p className={styles.body}>
-              When users rotate their iPhone to landscape, most apps simply stretch the portrait layout —
-              leading to awkward proportions, excessive white space, and a poor experience. Airbnb is no exception.
-              With the growing use of iPhones as travel companions on road trips and flights, users naturally reach
-              for landscape mode to get a wider, more immersive view of listings and maps.
+              Reimagining Airbnb's landscape experience for iOS challenged me to rethink how users interact with travel apps beyond the familiar portrait mode. By analysing the current design and prototyping new layouts, I focused on maximising horizontal space, streamlining navigation, and enhancing visual immersion.
+            </p>
+            <p className={styles.body}>
+              My final solution balances intuitive interactions with adaptability, making it easier for users to browse, plan, and book, regardless of orientation or accessibility needs. This project reinforced my belief that thoughtful design can transform even small shifts in interface into meaningful improvements for diverse audiences.
             </p>
           </div>
         </div>

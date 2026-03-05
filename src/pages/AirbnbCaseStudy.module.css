@@ -126,7 +126,7 @@
 .mockupHangSection {
   position: relative;
   background: #ffffff;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .mockupHangBg {
@@ -185,6 +185,7 @@
 /* Text blocks */
 .textBlock {
   max-width: 720px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
