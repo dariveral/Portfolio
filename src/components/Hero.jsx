@@ -7,8 +7,7 @@ export default function Hero() {
         <h1 className={styles.heading}>
           Hey! I'm Darlene – a creative product designer based in London.
         </h1>
-        <a href="#work" className={styles.cta}>Explore my work</a>
-      </div>
+</div>
     </section>
   )
 }

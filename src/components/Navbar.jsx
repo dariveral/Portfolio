@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import styles from './Navbar.module.css'
+import avatar from '../assets/avatar.jpg'
 
 export default function Navbar() {
   const { pathname } = useLocation()
@@ -9,8 +10,7 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <Link to="/" className={styles.logo} aria-label="Home">
           <div className={styles.avatar}>
-            {/* Replace src with your photo: <img src="/photo.jpg" alt="Darlene" className={styles.avatarImg} /> */}
-            <span className={styles.initials}>DR</span>
+            <img src={avatar} alt="Darlene" className={styles.avatarImg} />
           </div>
         </Link>
         <div className={styles.links}>

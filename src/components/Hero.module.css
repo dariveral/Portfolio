@@ -1,20 +1,19 @@
 .hero {
-  padding: 120px 40px 100px;
+  padding: 80px 20px 50px;
 }
 
 .inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
 }
 
 .heading {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(36px, 5vw, 64px);
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
   color: var(--text);
-  max-width: 780px;
   margin-bottom: 48px;
 }
 

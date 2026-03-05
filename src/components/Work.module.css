@@ -1,90 +1,116 @@
 .section {
-  padding: 40px 40px 100px;
+  padding: 40px 20px 100px;
 }
 
 .inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
+  max-width: 100%;
+}
+
+.headingRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .heading {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-muted);
-  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0;
   letter-spacing: 0.01em;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .card {
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  background: var(--surface);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 50px;
+  padding: 50px;
+  height: 100vh;
+  position: relative;
+}
+
+.cardContent {
+  flex: 1;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 0;
 }
 
-.cardImage {
+.cardMockupFrame {
+  flex: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mockupImg {
   width: 100%;
-  aspect-ratio: 16 / 8;
-  overflow: hidden;
-  background: #e8e8e8;
-}
-
-.cardImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.imagePlaceholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
-}
-
-.cardBody {
-  padding: 28px 32px 32px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .cardLabel {
   display: inline-block;
-  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 12px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 16px;
 }
 
 .cardTitle {
-  font-size: clamp(22px, 3vw, 32px);
-  font-weight: 600;
-  line-height: 1.25;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
   letter-spacing: -0.02em;
-  color: var(--text);
-  margin-bottom: 24px;
-  max-width: 600px;
+  margin-bottom: 32px;
+  max-width: 100%;
 }
 
-.cardLink {
-  display: inline-block;
-  font-size: 15px;
+.cardBtn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
   font-weight: 500;
-  color: var(--accent);
-  transition: opacity 0.15s;
+  width: 190px;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: 1.5px solid #ffffff;
+  background: #ffffff;
+  color: #000000;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
-.cardLink:hover {
-  opacity: 0.7;
+.cardBtn:hover {
+  background: #0037ff;
+  border-color: #0037ff;
+  color: #ffffff;
 }
 
-@media (max-width: 640px) {
-  .section { padding: 40px 20px 60px; }
-  .cardBody { padding: 20px; }
+
+@media (max-width: 768px) {
+  .card { flex-direction: column; height: auto; min-height: 100vh; }
+  .cardMockupFrame { width: 100%; }
 }
