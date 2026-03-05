@@ -7,6 +7,7 @@ import About from './pages/About'
 import WorkWithMe from './pages/WorkWithMe'
 import TravelList from './pages/TravelList'
 import BucketList from './pages/BucketList'
+import AirbnbCaseStudy from './pages/AirbnbCaseStudy'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/work-with-me" element={<WorkWithMe />} />
+          <Route path="/landscape-airbnb-on-ios" element={<AirbnbCaseStudy />} />
           <Route path="/travel" element={<TravelList />} />
           <Route path="/bucket-list" element={<BucketList />} />
         </Routes>

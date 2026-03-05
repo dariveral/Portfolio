@@ -1,0 +1,207 @@
+import styles from './AirbnbCaseStudy.module.css'
+import heroImg from '../assets/Header image.png'
+import homeMockup from '../assets/Airbnb landscape - home mockup.png'
+import searchMockup from '../assets/Airbnb landscape - search mockup 6.png'
+
+export default function AirbnbCaseStudy() {
+  return (
+    <main>
+
+      {/* Hero */}
+      <section className={styles.hero} style={{ backgroundImage: `url(${heroImg})` }}>
+        <div className={styles.heroInner}>
+          <span className={styles.heroLabel}>
+            <svg width="22" height="27" viewBox="0 0 814 1000" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style={{ display: 'block' }}>
+              <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105.6-57.8-155.5-127.4C46 790.7 0 663 0 541.8c0-207.8 135.7-317.9 269-317.9 70.7 0 129.5 46.4 173.5 46.4 42.3 0 109.2-49 192.2-49 31 0 113.3 2.6 181.5 84.9zm-192.5-261.7c33.5-39.5 56.9-94.4 56.9-149.3 0-7.7-.6-15.5-1.9-21.7-53.5 2-116.8 35.5-154.3 80.5-29.6 34.5-56.9 89.4-56.9 145.1 0 8.3 1.3 16.5 1.9 19.1 3.2.6 8.4 1.3 13.6 1.3 47.9 0 108.2-32.1 140.7-75z"/>
+            </svg>
+            Apple
+          </span>
+          <h1 className={styles.heroTitle}>Reimagining the Airbnb app in landscape mode on iOS</h1>
+        </div>
+      </section>
+
+      {/* Description */}
+      <section className={styles.section}>
+        <div className={styles.inner}>
+          <div className={styles.descriptionRow}>
+            <div className={styles.descriptionMeta}>
+              <div className={styles.metaItem}>
+                <span className={styles.metaLabel}>Role</span>
+                <span className={styles.metaValue}>Product Designer</span>
+              </div>
+              <div className={styles.metaItem}>
+                <span className={styles.metaLabel}>Year</span>
+                <span className={styles.metaValue}>2024</span>
+              </div>
+              <div className={styles.metaItem}>
+                <span className={styles.metaLabel}>Type</span>
+                <span className={styles.metaValue}>Concept / Personal Project</span>
+              </div>
+            </div>
+            <div className={styles.descriptionText}>
+              <p className={styles.body}>
+                Airbnb's iOS app is designed primarily for portrait mode — but what happens when users
+                rotate their phones? This project explores what a thoughtful, native landscape experience
+                could look like, redesigning key screens to take full advantage of the wider canvas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mockup Showcase */}
+      <section className={styles.sectionGrey}>
+        <div className={styles.inner}>
+          <div className={styles.mockupShowcase}>
+            <img src={homeMockup} alt="Airbnb home screen in landscape" className={styles.showcaseMockup} />
+            <img src={searchMockup} alt="Airbnb search screen in landscape" className={styles.showcaseMockup} />
+          </div>
+        </div>
+      </section>
+
+      {/* More description */}
+      <section className={styles.section}>
+        <div className={styles.inner}>
+          <div className={styles.textBlock}>
+            <span className={styles.sectionLabel}>The Problem</span>
+            <h2 className={styles.sectionHeading}>Landscape mode is an afterthought in most mobile apps</h2>
+            <p className={styles.body}>
+              When users rotate their iPhone to landscape, most apps simply stretch the portrait layout —
+              leading to awkward proportions, excessive white space, and a poor experience. Airbnb is no exception.
+              With the growing use of iPhones as travel companions on road trips and flights, users naturally reach
+              for landscape mode to get a wider, more immersive view of listings and maps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature cards 2x2 — Problem */}
+      <section className={styles.sectionGrey}>
+        <div className={styles.inner}>
+          <span className={styles.sectionLabel}>Pain Points</span>
+          <div className={styles.cardGrid}>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>01</span>
+              <h3 className={styles.cardTitle}>Stretched layouts</h3>
+              <p className={styles.cardBody}>Portrait UI elements simply stretch horizontally, leaving awkward gaps and unreadable line lengths.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>02</span>
+              <h3 className={styles.cardTitle}>Wasted screen real estate</h3>
+              <p className={styles.cardBody}>The wider canvas is underutilised — the map and listing views don't take advantage of the extra space.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>03</span>
+              <h3 className={styles.cardTitle}>Thumb reach issues</h3>
+              <p className={styles.cardBody}>Key actions remain in portrait positions, making them difficult to reach comfortably in landscape.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>04</span>
+              <h3 className={styles.cardTitle}>No adaptive navigation</h3>
+              <p className={styles.cardBody}>The bottom tab bar doesn't adapt to landscape, cluttering the limited vertical space.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Text */}
+      <section className={styles.section}>
+        <div className={styles.inner}>
+          <div className={styles.textBlock}>
+            <span className={styles.sectionLabel}>Approach</span>
+            <h2 className={styles.sectionHeading}>Designing for the rotated context</h2>
+            <p className={styles.body}>
+              Rather than adapting the portrait layout, I started from scratch — asking what each screen
+              should look like if landscape was the primary orientation. The goal was to create a layout
+              that feels intentional, not like a fallback.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Frame with mockup on background */}
+      <section className={styles.mockupBanner} style={{ backgroundImage: `url(${heroImg})` }}>
+        <img src={homeMockup} alt="Airbnb home in landscape" className={styles.bannerMockup} />
+      </section>
+
+      {/* Text / description */}
+      <section className={styles.section}>
+        <div className={styles.inner}>
+          <div className={styles.textBlock}>
+            <span className={styles.sectionLabel}>The Solution</span>
+            <h2 className={styles.sectionHeading}>A side-by-side layout that uses every pixel</h2>
+            <p className={styles.body}>
+              The redesigned home screen splits the canvas into two zones — a browsable listing feed on
+              the left and a live map on the right. Navigation moves to a slim left-side rail, keeping
+              thumbs close to key actions. Content breathes, and the wider view makes browsing feel
+              more like exploring.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature cards 2x2 — Solution */}
+      <section className={styles.sectionGrey}>
+        <div className={styles.inner}>
+          <span className={styles.sectionLabel}>Design Decisions</span>
+          <div className={styles.cardGrid}>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>01</span>
+              <h3 className={styles.cardTitle}>Side-by-side layout</h3>
+              <p className={styles.cardBody}>Map and listings sit side by side, letting users browse and orient themselves simultaneously.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>02</span>
+              <h3 className={styles.cardTitle}>Left-rail navigation</h3>
+              <p className={styles.cardBody}>Tabs move to a vertical left rail — closer to the thumb zone and freeing up vertical screen space.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>03</span>
+              <h3 className={styles.cardTitle}>Condensed search</h3>
+              <p className={styles.cardBody}>The search experience is redesigned to show recent searches and suggestions in a two-column layout.</p>
+            </div>
+            <div className={styles.featureCard}>
+              <span className={styles.cardNumber}>04</span>
+              <h3 className={styles.cardTitle}>Adaptive typography</h3>
+              <p className={styles.cardBody}>Font sizes and line lengths are tuned for the wider canvas, maintaining readability at a glance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Text / description */}
+      <section className={styles.section}>
+        <div className={styles.inner}>
+          <div className={styles.textBlock}>
+            <span className={styles.sectionLabel}>Search Screen</span>
+            <h2 className={styles.sectionHeading}>Rethinking search for a wider view</h2>
+            <p className={styles.body}>
+              The search screen takes advantage of the extra width to show recent searches alongside
+              suggested destinations, reducing the number of taps needed to find and book a stay.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Frame with mockup on background */}
+      <section className={styles.mockupBanner} style={{ backgroundImage: `url(${heroImg})` }}>
+        <img src={searchMockup} alt="Airbnb search in landscape" className={styles.bannerMockup} />
+      </section>
+
+      {/* Closing description + download */}
+      <section className={styles.section}>
+        <div className={styles.inner}>
+          <div className={styles.closing}>
+            <h2 className={styles.sectionHeading}>Want to see the full case study?</h2>
+            <p className={styles.body}>
+              The full case study includes the complete design process — research, wireframes, component
+              decisions, and final screens. Download the PDF to explore the work in detail.
+            </p>
+            <a href="#" className={styles.downloadBtn}>Download case study</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  )
+}

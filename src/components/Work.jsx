@@ -9,7 +9,7 @@ const CASE_STUDIES = [
     id: 'airbnb-landscape',
     label: 'Case Study',
     title: 'Reimagining the Airbnb app in landscape mode on iOS',
-    href: '/work/airbnb-landscape',
+    href: '/landscape-airbnb-on-ios',
     bgImage: caseStudyHome,
     textColor: '#ffffff',
     mockups: [airbnbHomeMockup, airbnbSearchMockup],
