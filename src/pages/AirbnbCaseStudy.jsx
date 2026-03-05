@@ -1,5 +1,6 @@
 import styles from './AirbnbCaseStudy.module.css'
 import heroImg from '../assets/Header image.png'
+import caseStudyHome from '../assets/case study home.png'
 import homeMockup from '../assets/Airbnb landscape - home mockup.png'
 import searchMockup from '../assets/Airbnb landscape - search mockup 6.png'
 
@@ -37,12 +38,12 @@ export default function AirbnbCaseStudy() {
       </section>
 
       {/* Mockup Showcase */}
-      <section className={styles.sectionGrey}>
-        <div className={styles.inner}>
-          <div className={styles.mockupShowcase}>
-            <img src={homeMockup} alt="Airbnb home screen in landscape" className={styles.showcaseMockup} />
-            <img src={searchMockup} alt="Airbnb search screen in landscape" className={styles.showcaseMockup} />
-          </div>
+      <section className={styles.mockupHangSection}>
+        <div className={styles.mockupHangBg} style={{ backgroundImage: `url(${caseStudyHome})` }}>
+          <h2 className={styles.mockupHangHeading}>A new view opens up new journeys.</h2>
+        </div>
+        <div className={styles.mockupHangImgWrap}>
+          <img src={homeMockup} alt="Airbnb home screen in landscape" className={styles.mockupHangImg} />
         </div>
       </section>
 
