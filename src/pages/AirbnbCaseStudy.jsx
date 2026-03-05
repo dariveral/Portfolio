@@ -17,35 +17,22 @@ export default function AirbnbCaseStudy() {
             Apple
           </span>
           <h1 className={styles.heroTitle}>Reimagining the Airbnb app in landscape mode on iOS</h1>
+          <a href="#" className={styles.heroBtn}>Download full case study</a>
         </div>
       </section>
 
       {/* Description */}
-      <section className={styles.section}>
-        <div className={styles.inner}>
-          <div className={styles.descriptionRow}>
-            <div className={styles.descriptionMeta}>
-              <div className={styles.metaItem}>
-                <span className={styles.metaLabel}>Role</span>
-                <span className={styles.metaValue}>Product Designer</span>
-              </div>
-              <div className={styles.metaItem}>
-                <span className={styles.metaLabel}>Year</span>
-                <span className={styles.metaValue}>2024</span>
-              </div>
-              <div className={styles.metaItem}>
-                <span className={styles.metaLabel}>Type</span>
-                <span className={styles.metaValue}>Concept / Personal Project</span>
-              </div>
-            </div>
-            <div className={styles.descriptionText}>
-              <p className={styles.body}>
-                Airbnb's iOS app is designed primarily for portrait mode — but what happens when users
-                rotate their phones? This project explores what a thoughtful, native landscape experience
-                could look like, redesigning key screens to take full advantage of the wider canvas.
-              </p>
-            </div>
-          </div>
+      <section className={styles.descriptionSection}>
+        <div className={styles.descriptionContent}>
+          <p className={styles.descriptionBody}>
+            Open up Airbnb on your iPhone and it's portrait mode all the way - landscape is just sitting on the sidelines, unused. So, when Apple handed me a design challenge to reimagine Airbnb in landscape mode for iOS, I saw a chance to redefine the current experience and give sideways browsing its moment in the sun.
+          </p>
+          <p className={styles.descriptionBody}>
+            My aim was to craft an experience that feels immersive and intuitive, with visuals that invite you to explore rather than just scroll. I wanted users to feel like they're discovering new destinations, not simply navigating another app.
+          </p>
+          <p className={styles.descriptionBody}>
+            Throughout the process, adaptability and scalability were key. The design needed to look stunning and work seamlessly across any compatible iOS device, balancing eye-catching visuals with navigation that's always straightforward.
+          </p>
         </div>
       </section>
 
