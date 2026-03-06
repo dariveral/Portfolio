@@ -4,10 +4,10 @@ import caseStudyHome from '../assets/case study home.png'
 import homeMockup from '../assets/Home.png'
 import searchMockup from '../assets/Where Map.png'
 import mockupBg from '../assets/mockup background.jpg'
-import gridImg1 from '../assets/Where_.png'
+import gridImg1 from '../assets/Where.png'
 import gridImg2 from '../assets/Map preview.png'
 import gridImg3 from '../assets/home preview.png'
-import gridImg4 from '../assets/When_.png'
+import gridImg4 from '../assets/When.png'
 
 export default function AirbnbCaseStudy() {
   return (
