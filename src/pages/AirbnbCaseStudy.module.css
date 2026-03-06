@@ -232,6 +232,31 @@
   display: block;
 }
 
+/* Screenshot grid */
+.screenshotGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 40px 20px;
+}
+
+.screenshotCell {
+  background: #e8e8e8;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenshotCell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* Feature card grid */
 .cardGrid {
   display: grid;
@@ -336,6 +361,7 @@
   .sectionGrey { padding: 60px 20px; }
   .descriptionMeta { flex-wrap: wrap; justify-content: center; gap: 16px; }
   .cardGrid { grid-template-columns: 1fr; }
+  .screenshotGrid { grid-template-columns: 1fr; padding: 20px; }
   .sectionHeading { font-size: 28px; }
   .mockupBanner { min-height: 300px; padding: 40px 20px; }
 }

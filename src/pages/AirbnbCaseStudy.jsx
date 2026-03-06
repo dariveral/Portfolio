@@ -1,8 +1,12 @@
 import styles from './AirbnbCaseStudy.module.css'
 import heroImg from '../assets/Header image.png'
 import caseStudyHome from '../assets/case study home.png'
-import homeMockup from '../assets/Airbnb landscape - home mockup.png'
+import homeMockup from '../assets/airbnb landscape home mockup.png'
 import searchMockup from '../assets/Airbnb landscape - search mockup 6.png'
+import gridImg1 from '../assets/Where_.png'
+import gridImg2 from '../assets/Map preview.png'
+import gridImg3 from '../assets/Menu/home preview.png'
+import gridImg4 from '../assets/When_.png'
 
 export default function AirbnbCaseStudy() {
   return (
@@ -61,31 +65,20 @@ export default function AirbnbCaseStudy() {
         </div>
       </section>
 
-      {/* Feature cards 2x2 — Problem */}
-      <section className={styles.sectionGrey}>
-        <div className={styles.inner}>
-          <span className={styles.sectionLabel}>Pain Points</span>
-          <div className={styles.cardGrid}>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>01</span>
-              <h3 className={styles.cardTitle}>Stretched layouts</h3>
-              <p className={styles.cardBody}>Portrait UI elements simply stretch horizontally, leaving awkward gaps and unreadable line lengths.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>02</span>
-              <h3 className={styles.cardTitle}>Wasted screen real estate</h3>
-              <p className={styles.cardBody}>The wider canvas is underutilised — the map and listing views don't take advantage of the extra space.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>03</span>
-              <h3 className={styles.cardTitle}>Thumb reach issues</h3>
-              <p className={styles.cardBody}>Key actions remain in portrait positions, making them difficult to reach comfortably in landscape.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>04</span>
-              <h3 className={styles.cardTitle}>No adaptive navigation</h3>
-              <p className={styles.cardBody}>The bottom tab bar doesn't adapt to landscape, cluttering the limited vertical space.</p>
-            </div>
+      {/* Screenshot grid 2x2 */}
+      <section>
+        <div className={styles.screenshotGrid}>
+          <div className={styles.screenshotCell}>
+            <img src={gridImg1} alt="Where screen" />
+          </div>
+          <div className={styles.screenshotCell}>
+            <img src={gridImg2} alt="Map preview" />
+          </div>
+          <div className={styles.screenshotCell}>
+            <img src={gridImg3} alt="Home preview" />
+          </div>
+          <div className={styles.screenshotCell}>
+            <img src={gridImg4} alt="When screen" />
           </div>
         </div>
       </section>
