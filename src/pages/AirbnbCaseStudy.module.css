@@ -258,11 +258,11 @@
 }
 
 .screenshotCell:nth-child(2) img {
-  transform: translateX(-20%);
+  transform: scale(1.4) translateX(-40%);
 }
 
 .screenshotCell:nth-child(3) img {
-  transform: translateX(20%);
+  transform: scale(1.4) translateX(40%);
 }
 
 /* Feature card grid */

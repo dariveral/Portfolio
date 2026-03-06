@@ -5,7 +5,7 @@ import homeMockup from '../assets/airbnb landscape home mockup.png'
 import searchMockup from '../assets/Airbnb landscape - search mockup 6.png'
 import gridImg1 from '../assets/Where_.png'
 import gridImg2 from '../assets/Map preview.png'
-import gridImg3 from '../assets/Menu/home preview.png'
+import gridImg3 from '../assets/home preview.png'
 import gridImg4 from '../assets/When_.png'
 
 export default function AirbnbCaseStudy() {
