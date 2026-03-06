@@ -236,15 +236,15 @@
 .screenshotGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 20px;
   padding: 40px 20px;
 }
 
 .screenshotCell {
-  background: #e8e8e8;
+  background: #F5F5F7;
   border-radius: 20px;
   overflow: hidden;
-  aspect-ratio: 1 / 1;
+  height: 511px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,8 +253,16 @@
 .screenshotCell img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+}
+
+.screenshotCell:nth-child(2) img {
+  transform: translateX(-20%);
+}
+
+.screenshotCell:nth-child(3) img {
+  transform: translateX(20%);
 }
 
 /* Feature card grid */
