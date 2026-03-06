@@ -309,7 +309,7 @@
 
 /* Mockup banner */
 .mockupBanner {
-  min-height: 600px;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -321,9 +321,7 @@
 .bannerMockup {
   width: 100%;
   max-width: 900px;
-  border-radius: 12px;
   display: block;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
 }
 
 /* Closing */

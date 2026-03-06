@@ -3,6 +3,7 @@ import heroImg from '../assets/Header image.png'
 import caseStudyHome from '../assets/case study home.png'
 import homeMockup from '../assets/airbnb landscape home mockup.png'
 import searchMockup from '../assets/Airbnb landscape - search mockup 6.png'
+import mockupBg from '../assets/mockup background.jpg'
 import gridImg1 from '../assets/Where_.png'
 import gridImg2 from '../assets/Map preview.png'
 import gridImg3 from '../assets/home preview.png'
@@ -84,36 +85,36 @@ export default function AirbnbCaseStudy() {
       </section>
 
       {/* Text */}
-      <section className={styles.section}>
+      <section className={styles.section} style={{ minHeight: '460px', padding: '100px 40px' }}>
         <div className={styles.inner}>
           <div className={styles.textBlock}>
-            <span className={styles.sectionLabel}>Approach</span>
-            <h2 className={styles.sectionHeading}>Designing for the rotated context</h2>
+<p className={styles.body}>
+              The design blends elements from Airbnb's design language with Apple's system conventions, making the experience feel authentically Airbnb while remaining native to iOS. Apple's Human Interface Guidelines informed key decisions throughout.
+            </p>
             <p className={styles.body}>
-              Rather than adapting the portrait layout, I started from scratch — asking what each screen
-              should look like if landscape was the primary orientation. The goal was to create a layout
-              that feels intentional, not like a fallback.
+              Notable features include Apple's new liquid glass material for the search field, and a full-height map that subtly fades into listings on the search page to support spatial discovery.
+            </p>
+            <p className={styles.body}>
+              I was deliberate about when to use liquid glass versus solid colour surfaces, prioritising clarity and contrast, to align with Airbnb's principle of simplicity and maintain visual consistency.
             </p>
           </div>
         </div>
       </section>
 
       {/* Frame with mockup on background */}
-      <section className={styles.mockupBanner} style={{ backgroundImage: `url(${heroImg})` }}>
-        <img src={homeMockup} alt="Airbnb home in landscape" className={styles.bannerMockup} />
+      <section className={styles.mockupBanner} style={{ backgroundImage: `url(${mockupBg})` }}>
+        <img src={searchMockup} alt="Airbnb search in landscape" className={styles.bannerMockup} />
       </section>
 
       {/* Text / description */}
-      <section className={styles.section}>
+      <section className={styles.section} style={{ minHeight: '460px', padding: '100px 40px' }}>
         <div className={styles.inner}>
           <div className={styles.textBlock}>
-            <span className={styles.sectionLabel}>The Solution</span>
-            <h2 className={styles.sectionHeading}>A side-by-side layout that uses every pixel</h2>
             <p className={styles.body}>
-              The redesigned home screen splits the canvas into two zones — a browsable listing feed on
-              the left and a live map on the right. Navigation moves to a slim left-side rail, keeping
-              thumbs close to key actions. Content breathes, and the wider view makes browsing feel
-              more like exploring.
+              Extending the map to full-screen delivers a more immersive, desktop-like feel, thanks to the wider field of view. This approach eases the shift from desktop to mobile and boosts accessibility by maximising horizontal space - making content clearer for users who rely on docks or external keyboards.
+            </p>
+            <p className={styles.body}>
+              Using a liquid glass material for the search box allows the map to subtly shine through, deepening the sense of immersion without compromising clarity or readability.
             </p>
           </div>
         </div>
