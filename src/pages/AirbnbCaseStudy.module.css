@@ -265,6 +265,36 @@
   transform: scale(1.4) translateX(40%);
 }
 
+.screenshotGridFlat .screenshotCell:nth-child(2) img,
+.screenshotGridFlat .screenshotCell:nth-child(3) img {
+  transform: none;
+}
+
+.screenshotGridFlat .screenshotCell {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+}
+
+.screenshotGridFlat .screenshotCell img {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.screenshotLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-top: 20px;
+  padding: 0 20px 16px;
+  align-self: center;
+  text-align: center;
+}
+
 /* Feature card grid */
 .cardGrid {
   display: grid;
