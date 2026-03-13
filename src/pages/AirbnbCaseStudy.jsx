@@ -8,6 +8,13 @@ import gridImg1 from '../assets/Where component.png'
 import gridImg2 from '../assets/Map preview.png'
 import gridImg3 from '../assets/home preview.png'
 import gridImg4 from '../assets/Date selection component.png'
+import ddImg1 from '../assets/Where.png'
+import ddImg2 from '../assets/Where Map.png'
+import ddImg3 from '../assets/When.png'
+import ddImg4 from '../assets/Who.png'
+import resultsMockup from '../assets/results map.png'
+import greeceBg from '../assets/greece background.jpeg'
+import caseStudyPdf from '../assets/Reimagining the Airbnb App in Landscape Mode on ioS.pdf'
 
 export default function AirbnbCaseStudy() {
   return (
@@ -120,64 +127,46 @@ export default function AirbnbCaseStudy() {
         </div>
       </section>
 
-      {/* Feature cards 2x2 — Solution */}
-      <section className={styles.sectionGrey}>
-        <div className={styles.inner}>
-          <span className={styles.sectionLabel}>Design Decisions</span>
-          <div className={styles.cardGrid}>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>01</span>
-              <h3 className={styles.cardTitle}>Side-by-side layout</h3>
-              <p className={styles.cardBody}>Map and listings sit side by side, letting users browse and orient themselves simultaneously.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>02</span>
-              <h3 className={styles.cardTitle}>Left-rail navigation</h3>
-              <p className={styles.cardBody}>Tabs move to a vertical left rail — closer to the thumb zone and freeing up vertical screen space.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>03</span>
-              <h3 className={styles.cardTitle}>Condensed search</h3>
-              <p className={styles.cardBody}>The search experience is redesigned to show recent searches and suggestions in a two-column layout.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <span className={styles.cardNumber}>04</span>
-              <h3 className={styles.cardTitle}>Adaptive typography</h3>
-              <p className={styles.cardBody}>Font sizes and line lengths are tuned for the wider canvas, maintaining readability at a glance.</p>
-            </div>
-          </div>
+      {/* Design Decisions grid */}
+      <section>
+        <div className={`${styles.screenshotGrid} ${styles.screenshotGridFlat}`}>
+          <div className={styles.screenshotCell}><img src={ddImg1} alt="Where" /><span className={styles.screenshotLabel}>Search screen: Where?</span></div>
+          <div className={styles.screenshotCell}><img src={ddImg2} alt="Where Map" /><span className={styles.screenshotLabel}>Search screen: Map</span></div>
+          <div className={styles.screenshotCell}><img src={ddImg3} alt="When" /><span className={styles.screenshotLabel}>Search screen: When?</span></div>
+          <div className={styles.screenshotCell}><img src={ddImg4} alt="Who" /><span className={styles.screenshotLabel}>Search screen: Who?</span></div>
         </div>
       </section>
 
       {/* Text / description */}
-      <section className={styles.section}>
+      <section className={styles.section} style={{ padding: '50px 40px 100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className={styles.inner}>
           <div className={styles.textBlock}>
-            <span className={styles.sectionLabel}>Search Screen</span>
-            <h2 className={styles.sectionHeading}>Rethinking search for a wider view</h2>
             <p className={styles.body}>
-              The search screen takes advantage of the extra width to show recent searches alongside
-              suggested destinations, reducing the number of taps needed to find and book a stay.
+              The familiar search layout ensures a seamless transition between portrait and landscape, while clear, well-defined content boxes keep users focused and reinforce Airbnb's commitment to simple, intuitive design.
+            </p>
+            <p className={styles.body}>
+              Tabs follow Airbnb's existing patterns, maintained exactly as users know them, simply rotated to maximise horizontal space, so switching between sections feels natural and effortless.
             </p>
           </div>
         </div>
       </section>
 
       {/* Frame with mockup on background */}
-      <section className={styles.mockupBanner} style={{ backgroundImage: `url(${heroImg})` }}>
-        <img src={searchMockup} alt="Airbnb search in landscape" className={styles.bannerMockup} />
+      <section className={styles.mockupBanner} style={{ backgroundImage: `url(${greeceBg})` }}>
+        <img src={resultsMockup} alt="Airbnb results map in landscape" className={styles.bannerMockup} />
       </section>
 
       {/* Closing description + download */}
-      <section className={styles.section}>
+      <section className={styles.section} style={{ padding: '50px 40px 100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className={styles.inner}>
           <div className={styles.closing}>
-            <h2 className={styles.sectionHeading}>Want to see the full case study?</h2>
             <p className={styles.body}>
-              The full case study includes the complete design process — research, wireframes, component
-              decisions, and final screens. Download the PDF to explore the work in detail.
+              The final search screen uses a split view for clear hierarchy: home listings on the left, interactive map on the right. Cards surface key details (thumbnail, rating, location, dates, price), with deeper information revealed only when needed. Map price markers and points of interest reinforce spatial continuity, mirroring the current Airbnb experience.
             </p>
-            <a href="#" className={styles.downloadBtn}>Download case study</a>
+            <p className={styles.body}>
+              A subtle gradient maintains depth and reduces visual noise, and orientation persistence keeps the layout consistent across portrait and landscape. Familiar affordances, like persistent bottom navigation and vertical tabs that match Airbnb's existing pattern enable quick, confident navigation.
+            </p>
+            <a href={caseStudyPdf} download className={styles.downloadBtn}>Download the full case study</a>
           </div>
         </div>
       </section>
