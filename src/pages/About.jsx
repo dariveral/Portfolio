@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import styles from './About.module.css'
 import imgAbout from '../assets/image about.JPG'
 import calypsoAbout from '../assets/calypso about.png'
+import calyIcon from '../assets/Caly icon white large.png'
 
 export default function About() {
   return (
@@ -52,6 +53,12 @@ export default function About() {
             <span className={styles.listArrow}>→</span>
           </Link>
         </div>
+      </section>
+
+      {/* Nice to meet you */}
+      <section className={styles.meetSection}>
+        <img src={calyIcon} alt="" className={styles.meetAvatar} />
+        <span className={styles.meetText}>Nice to meet you!</span>
       </section>
 
     </div>
