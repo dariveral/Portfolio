@@ -77,6 +77,13 @@
   color: var(--accent);
 }
 
+@media (max-width: 480px) {
+  .nav { padding: 14px 16px; }
+  .avatar { width: 52px; height: 62px; }
+  .link, .linkBlue { font-size: 15px; }
+  .links { gap: 14px; }
+}
+
 /* White text variant for dark hero backgrounds */
 .lightText .link,
 .lightText .linkBlue {

@@ -180,12 +180,29 @@
 /* Responsive */
 @media (max-width: 900px) {
   .sticker { display: none; }
+  .hero { flex-direction: column; align-items: center; padding-top: 90px; }
+  .heroImgLeft { width: 100%; height: 320px; }
+  .heroImgRight { width: 60%; height: 240px; align-self: center; }
+  .heroHeading { font-size: 44px; }
 }
 
 @media (max-width: 640px) {
-  .page { padding: 40px 20px 80px; }
-  .heroHeading { font-size: 36px; }
-  .heroImg { height: 240px; }
-  .gallery { flex-direction: column; }
-  .galleryImg { height: 200px; }
+  .page { padding: 20px 16px 60px; }
+  .hero { padding-top: 80px; gap: 16px; }
+  .heroHeading { font-size: 32px; }
+  .heroImgLeft { height: 240px; }
+  .heroImgRight { display: none; }
+  .about { flex-direction: column; gap: 12px; padding: 20px 0; }
+  .aboutLabel { font-size: 28px; }
+  .body { font-size: 20px; }
+  .meetSection { flex-direction: column; height: auto; padding: 30px 20px; gap: 20px; }
+  .meetText { font-size: 36px; }
+  .meetAvatar { width: 160px; height: 160px; }
+}
+
+@media (max-width: 480px) {
+  .heroHeading { font-size: 26px; }
+  .aboutLabel { font-size: 22px; }
+  .body { font-size: 17px; }
+  .meetText { font-size: 28px; }
 }

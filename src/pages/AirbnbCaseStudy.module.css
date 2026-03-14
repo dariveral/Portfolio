@@ -392,7 +392,7 @@
   .hero { padding: 40px 20px; }
   .heroLabel { font-size: 22px; }
   .heroTitle { font-size: 32px; }
-  .descriptionSection { padding: 60px 20px; }
+  .descriptionSection { padding: 60px 20px; min-height: auto; }
   .descriptionBody { font-size: 16px; }
   .mockupHangBg { padding-left: 20px; padding-right: 20px; }
   .mockupHangHeading { font-size: 24px; }
@@ -404,4 +404,15 @@
   .screenshotGrid { grid-template-columns: 1fr; padding: 20px; }
   .sectionHeading { font-size: 28px; }
   .mockupBanner { min-height: 300px; padding: 40px 20px; }
+  .downloadBtn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 30px 16px; }
+  .heroLabel { font-size: 18px; }
+  .heroTitle { font-size: 24px; }
+  .sectionHeading { font-size: 22px; }
+  .screenshotCell { height: 280px; }
+  .featureCard { padding: 24px; }
+  .screenshotGridFlat .screenshotCell { padding: 20px; }
 }

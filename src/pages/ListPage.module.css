@@ -124,3 +124,16 @@
   border-radius: 3px;
   letter-spacing: 0.04em;
 }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .page { padding: 40px 16px 80px; }
+  .item { gap: 10px; }
+  .meta { min-width: 100px; }
+}
+
+@media (max-width: 480px) {
+  .item { flex-wrap: wrap; }
+  .meta { min-width: 0; width: 100%; }
+  .year { margin-left: auto; }
+}
