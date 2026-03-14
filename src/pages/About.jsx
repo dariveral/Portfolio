@@ -4,9 +4,26 @@ import imgAbout from '../assets/image about.JPG'
 import calypsoAbout from '../assets/calypso about.png'
 import calyIcon from '../assets/Favicon/Caly icon white large.png'
 
+import stickerShootingStar from '../assets/stickers/metallic shooting star.png'
+import stickerDiscoBall    from '../assets/stickers/disco ball.png'
+import stickerCatStar      from '../assets/stickers/cat in star.png'
+import stickerPlanet       from '../assets/stickers/metallic planet.png'
+import stickerBlueStar     from '../assets/stickers/blue star.png'
+import stickerRedStar      from '../assets/stickers/red star.png'
+import stickerMetallicD    from '../assets/stickers/metallic d.png'
+
 export default function About() {
   return (
     <div className={styles.page}>
+
+      {/* Stickers */}
+      <img src={stickerShootingStar} className={styles.sticker} style={{ width: 110, top: 80,   left: '2%',  transform: 'rotate(-20deg)',  animationDelay: '0s'   }} alt="" aria-hidden="true" />
+      <img src={stickerDiscoBall}    className={styles.sticker} style={{ width: 90,  top: 60,   right: '1%', transform: 'rotate(12deg)',   animationDelay: '0.8s' }} alt="" aria-hidden="true" />
+      <img src={stickerBlueStar}     className={styles.sticker} style={{ width: 75,  top: 520,  left: '1%',  transform: 'rotate(-10deg)',  animationDelay: '1.4s' }} alt="" aria-hidden="true" />
+      <img src={stickerCatStar}      className={styles.sticker} style={{ width: 100, top: 680,  left: '22%', transform: 'rotate(8deg)',    animationDelay: '0.4s' }} alt="" aria-hidden="true" />
+      <img src={stickerPlanet}       className={styles.sticker} style={{ width: 85,  top: 1100, left: '2%',  transform: 'rotate(15deg)',   animationDelay: '1.1s' }} alt="" aria-hidden="true" />
+      <img src={stickerRedStar}      className={styles.sticker} style={{ width: 65,  top: 1400, right: '2%', transform: 'rotate(-8deg)',   animationDelay: '0.6s' }} alt="" aria-hidden="true" />
+      <img src={stickerMetallicD}    className={styles.sticker} style={{ width: 85,  top: 260,  left: '50%', transform: 'translateX(-50%) rotate(-5deg)', animationDelay: '1.7s' }} alt="" aria-hidden="true" />
 
       {/* Hero */}
       <section className={styles.hero}>

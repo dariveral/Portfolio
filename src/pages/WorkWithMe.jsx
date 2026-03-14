@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import styles from './WorkWithMe.module.css'
 
+import stickerCatTrick    from '../assets/stickers/cat trick.png'
+import stickerBlueRedStar from '../assets/stickers/blue red star.png'
+
 const MY_EMAIL = 'darleneriveral@icloud.com'
 const TODAY = new Date().toISOString().split('T')[0]
 
@@ -64,6 +67,11 @@ export default function WorkWithMe() {
 
   return (
     <div className={styles.page}>
+
+      {/* Stickers — only visible when side margins are wide enough */}
+      <img src={stickerCatTrick}    className={styles.sticker} style={{ width: 90,  top: 160, left:  20, transform: 'rotate(-12deg)', animationDelay: '0s'   }} alt="" aria-hidden="true" />
+      <img src={stickerBlueRedStar} className={styles.sticker} style={{ width: 70,  top: 500, right: 20, transform: 'rotate(-6deg)',  animationDelay: '0.5s' }} alt="" aria-hidden="true" />
+
       <div className={styles.inner}>
 
         {/* Hero */}
