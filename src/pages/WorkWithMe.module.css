@@ -1,5 +1,5 @@
 .page {
-  padding: 120px 40px 100px;
+  padding: 120px 20px 100px;
 }
 
 .inner {
@@ -22,6 +22,7 @@
   line-height: 1.1;
   color: var(--text);
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .sub {
@@ -29,6 +30,7 @@
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 48px;
+  text-align: left;
 }
 
 /* Tabs */
@@ -36,6 +38,7 @@
   display: flex;
   gap: 8px;
   margin-bottom: 40px;
+  justify-content: flex-start;
 }
 
 .tab {
@@ -223,5 +226,5 @@
   .row { grid-template-columns: 1fr; }
   .radioGroup { flex-direction: column; }
   .radioOption { flex-direction: row; justify-content: flex-start; gap: 8px; }
-  .submitBtn { width: 100%; text-align: center; }
+  .submitBtn { width: 100%; text-align: left; }
 }

@@ -67,7 +67,6 @@ export default function WorkWithMe() {
       <div className={styles.inner}>
 
         {/* Hero */}
-        <p className={styles.label}>Work with me</p>
         <h1 className={styles.heading}>Let's build something together.</h1>
         <p className={styles.sub}>
           I'm open to full-time roles, freelance projects, and collaborations.
