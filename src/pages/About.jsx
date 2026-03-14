@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import styles from './About.module.css'
 import imgAbout from '../assets/image about.JPG'
 import calypsoAbout from '../assets/calypso about.png'
-import calyIcon from '../assets/Caly icon white large.png'
+import calyIcon from '../assets/Favicon/Caly icon white large.png'
 
 export default function About() {
   return (

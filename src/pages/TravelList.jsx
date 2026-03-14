@@ -1,36 +1,103 @@
-import styles from './ListPage.module.css'
+import styles from './TravelList.module.css'
 
-const PLACES = [
-  { country: 'Portugal', city: 'Lisbon',        year: '2024', note: 'Tiles, hills, and the best custard tarts.' },
-  { country: 'Japan',    city: 'Tokyo',          year: '2023', note: 'Quiet temples next to neon arcades.' },
-  { country: 'Italy',    city: 'Rome',           year: '2022', note: 'Every corner is a museum.' },
-  { country: 'Morocco',  city: 'Marrakech',      year: '2022', note: 'Overwhelming in the best way.' },
-  { country: 'France',   city: 'Paris',          year: '2021', note: 'Will always return.' },
-  { country: 'Mexico',   city: 'Oaxaca',         year: '2020', note: 'Food, colour, and mezcal.' },
+import photoSaltLake   from '../assets/Travel list/salt lake.jpg'
+import photoKawasan    from '../assets/Travel list/Kawasan.jpg'
+import photoMilan      from '../assets/Travel list/Milan.jpg'
+import photoRocinha    from '../assets/Travel list/Rocinha.JPG'
+
+import stampAustria     from '../assets/Travel list/Austria.png'
+import stampBermuda     from '../assets/Travel list/Bermuda.png'
+import stampBrazil      from '../assets/Travel list/Brazil.png'
+import stampFrance      from '../assets/Travel list/France.png'
+import stampGreece      from '../assets/Travel list/Greece.png'
+import stampItaly       from '../assets/Travel list/Italy.png'
+import stampJapan       from '../assets/Travel list/Japan.png'
+import stampMadeira     from '../assets/Travel list/Madeira.png'
+import stampNetherlands from '../assets/Travel list/Netherlands.png'
+import stampPhilippines from '../assets/Travel list/Philippines.png'
+import stampSlovakia    from '../assets/Travel list/Slovakia.png'
+import stampSpain       from '../assets/Travel list/Spain.png'
+import stampTurkey      from '../assets/Travel list/Turkey.png'
+import stampUK          from '../assets/Travel list/UK.png'
+import stampUSA         from '../assets/Travel list/USA.png'
+import stampVatican     from '../assets/Travel list/Vatican.png'
+
+const STAMPS = [
+  { name: 'Austria',     img: stampAustria },
+  { name: 'Bermuda',     img: stampBermuda },
+  { name: 'Brazil',      img: stampBrazil },
+  { name: 'France',      img: stampFrance },
+  { name: 'Greece',      img: stampGreece },
+  { name: 'Italy',       img: stampItaly },
+  { name: 'Madeira',     img: stampMadeira },
+  { name: 'Netherlands', img: stampNetherlands },
+  { name: 'Philippines', img: stampPhilippines },
+  { name: 'Slovakia',    img: stampSlovakia },
+  { name: 'Spain',       img: stampSpain },
+  { name: 'Turkey',      img: stampTurkey },
+  { name: 'UK',          img: stampUK },
+  { name: 'USA',         img: stampUSA },
+  { name: 'Vatican',     img: stampVatican },
+]
+
+const UN_COUNT = 14
+const TOTAL = 15
+
+const COMING_SOON = [
+  { name: 'Japan', img: stampJapan },
 ]
 
 export default function TravelList() {
   return (
     <div className={styles.page}>
-      <div className={styles.inner}>
-        <header className={styles.header}>
-          <p className={styles.label}>About → Travel</p>
-          <h1 className={styles.title}>Places I've been</h1>
-          <p className={styles.sub}>{PLACES.length} countries and counting.</p>
-        </header>
-        <ul className={styles.list}>
-          {PLACES.map((p, i) => (
-            <li key={i} className={styles.item}>
-              <div className={styles.meta}>
-                <span className={styles.city}>{p.city}</span>
-                <span className={styles.country}>{p.country}</span>
-              </div>
-              <span className={styles.note}>{p.note}</span>
-              <span className={styles.year}>{p.year}</span>
-            </li>
+
+      {/* Hero */}
+      <section className={styles.hero}>
+        <h1 className={styles.heroHeading}>Darlene's travels</h1>
+        <p className={styles.heroSub}>My travel check list</p>
+        <div className={styles.photoGrid}>
+          <div className={styles.photoCell}><img src={photoSaltLake} alt="" /></div>
+          <div className={styles.photoCell}><img src={photoKawasan} alt="" /></div>
+          <div className={styles.photoCell}><img src={photoMilan} alt="" /></div>
+          <div className={styles.photoCell}><img src={photoRocinha} alt="" /></div>
+        </div>
+      </section>
+
+      {/* Stamps */}
+      <section className={styles.stampsSection}>
+        <div className={styles.stampsHeader}>
+          <p className={styles.stampsTitle}>
+            Countries I've visited{' '}
+            <span className={styles.stampsCount}>[{UN_COUNT}/195]</span>
+            <span className={styles.stampsNote}> (UN recognised)</span>
+          </p>
+          <p className={styles.stampsTotal}>Total: {TOTAL}</p>
+        </div>
+        <div className={styles.stampsGrid}>
+          {STAMPS.map(s => (
+            <div key={s.name} className={styles.stampItem}>
+              <img src={s.img} alt={s.name} className={styles.stampImg} />
+              <span className={styles.stampName}>{s.name}</span>
+            </div>
           ))}
-        </ul>
-      </div>
+        </div>
+      </section>
+
+      {/* Visiting Soon */}
+      <section className={styles.stampsSection}>
+        <div className={styles.stampsHeader}>
+          <p className={styles.stampsTitle}>Countries I'm visiting soon! 🤩</p>
+        </div>
+        <div className={styles.stampsGrid}>
+          {COMING_SOON.map(s => (
+            <div key={s.name} className={styles.stampItem}>
+              <img src={s.img} alt={s.name} className={styles.stampImg} />
+              <span className={styles.stampName}>{s.name}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </div>
   )
 }
