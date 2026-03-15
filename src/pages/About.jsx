@@ -19,10 +19,10 @@ export default function About() {
 
       {/* Stickers */}
       <img src={stickerShootingStar} className={styles.sticker} style={{ width: 110, top: 1100, left: '18%', transform: 'rotate(-20deg)',  animationDelay: '0s'   }} alt="" aria-hidden="true" />
-      <img src={stickerDiscoBall}    className={styles.sticker} style={{ width: 90,  top: 1100, left: '65%', transform: 'rotate(12deg)',   animationDelay: '0.8s' }} alt="" aria-hidden="true" />
+      <img src={stickerDiscoBall}    className={styles.sticker} style={{ width: 90,  top: 1100, left: '62%', transform: 'rotate(12deg)',   animationDelay: '0.8s' }} alt="" aria-hidden="true" />
       <img src={stickerBlueStar}     className={styles.sticker} style={{ width: 75,  top: 585,  left: '1%',  transform: 'rotate(-10deg)',  animationDelay: '1.4s' }} alt="" aria-hidden="true" />
       <img src={stickerCatStar}      className={styles.sticker} style={{ width: 160, top: 680,  left: '30%', transform: 'rotate(8deg)',    animationDelay: '0.4s' }} alt="" aria-hidden="true" />
-      <img src={stickerPlanet}       className={styles.sticker} style={{ width: 85,  top: 960,  right: '2%', transform: 'rotate(15deg)',   animationDelay: '1.1s' }} alt="" aria-hidden="true" />
+      <img src={stickerPlanet}       className={styles.sticker} style={{ width: 85,  top: 1000, right: '2%', transform: 'rotate(15deg)',   animationDelay: '1.1s' }} alt="" aria-hidden="true" />
       <img src={stickerRedStar}      className={styles.sticker} style={{ width: 65,  top: 1400, right: '2%', transform: 'rotate(-8deg)',   animationDelay: '0.6s' }} alt="" aria-hidden="true" />
       <img src={stickerMetallicD}    className={styles.sticker} style={{ width: 85,  top: 100,  left: '22%', transform: 'rotate(-5deg)', animationDelay: '1.7s' }} alt="" aria-hidden="true" />
       <img src={stickerCatHeart}     className={styles.sticker} style={{ width: 200, top: 240,  right: '10%', transform: 'rotate(-8deg)',   animationDelay: '0.9s' }} alt="" aria-hidden="true" />

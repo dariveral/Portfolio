@@ -3,6 +3,10 @@ import styles from './WorkWithMe.module.css'
 
 import stickerCatTrick    from '../assets/stickers/cat trick.png'
 import stickerBlueRedStar from '../assets/stickers/blue red star.png'
+import stickerBolt        from '../assets/stickers/red blue silver bolt.png'
+import stickerBlueBall    from '../assets/stickers/blue ball.png'
+import stickerPinkPlaster from '../assets/stickers/pink plaster.png'
+import stickerBlueStar    from '../assets/stickers/blue star.png'
 
 const MY_EMAIL = 'darleneriveral@icloud.com'
 const TODAY = new Date().toISOString().split('T')[0]
@@ -71,6 +75,10 @@ export default function WorkWithMe() {
       {/* Stickers — only visible when side margins are wide enough */}
       <img src={stickerCatTrick}    className={styles.sticker} style={{ width: 90,  top: 160, left:  20, transform: 'rotate(-12deg)', animationDelay: '0s'   }} alt="" aria-hidden="true" />
       <img src={stickerBlueRedStar} className={styles.sticker} style={{ width: 70,  top: 500, right: 20, transform: 'rotate(-6deg)',  animationDelay: '0.5s' }} alt="" aria-hidden="true" />
+      <img src={stickerBolt}        className={styles.sticker} style={{ width: 75,  top: 810, left: '38%',  transform: 'rotate(10deg)',  animationDelay: '1.2s' }} alt="" aria-hidden="true" />
+      <img src={stickerBlueBall}    className={styles.sticker} style={{ width: 80,  top: 150, right: 250,   transform: 'rotate(-8deg)',  animationDelay: '0.3s' }} alt="" aria-hidden="true" />
+      <img src={stickerPinkPlaster} className={styles.sticker} style={{ width: 90,  top: 600, left:  20,    transform: 'rotate(15deg)',  animationDelay: '0.7s' }} alt="" aria-hidden="true" />
+      <img src={stickerBlueStar}    className={styles.sticker} style={{ width: 70,  top: 400, right: 20,    transform: 'rotate(-12deg)', animationDelay: '1.0s' }} alt="" aria-hidden="true" />
 
       <div className={styles.inner}>
 
