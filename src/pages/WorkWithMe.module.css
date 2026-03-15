@@ -239,7 +239,7 @@
 }
 
 @media (max-width: 640px) {
-  .page { padding: 60px 20px 80px; }
+  .page { padding: 120px 20px 80px; }
   .row { grid-template-columns: 1fr; }
   .radioGroup { flex-direction: column; }
   .radioOption { flex-direction: row; justify-content: flex-start; gap: 8px; min-width: 0; }
@@ -247,6 +247,6 @@
 }
 
 @media (max-width: 480px) {
-  .page { padding: 80px 16px 80px; }
+  .page { padding: 110px 20px 80px; }
   .inner { padding: 0; }
 }

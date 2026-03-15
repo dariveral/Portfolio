@@ -120,6 +120,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero { padding-top: 120px; padding-bottom: 32px; }
   .heroHeading { font-size: 40px; }
   .heroSub { font-size: 20px; }
   .photoGrid { grid-template-columns: repeat(2, 1fr); }
@@ -130,7 +131,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero { padding-top: 60px; padding-bottom: 20px; }
+  .hero { padding-top: 100px; padding-bottom: 24px; }
   .heroHeading { font-size: 28px; }
   .heroSub { font-size: 16px; }
   .photoCell { height: 150px; border-radius: 12px; }
