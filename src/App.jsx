@@ -18,7 +18,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/Portfolio">
+    <BrowserRouter>
       <ScrollToTop />
       <Navbar />
       <main>
