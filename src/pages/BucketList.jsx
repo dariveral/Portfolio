@@ -10,7 +10,7 @@ const CATEGORIES = [
       { title: 'Do a food tour of Asia' },
       { title: 'Go to a Safari Experience' },
       { title: 'Hike to Macchu Picchu' },
-      { title: 'Take part in a Japanese tea ceremony' },
+      { title: 'Take part in a Japanese tea ceremony',      done: true, completedDate: '09.04.26' },
       { title: 'See the Chocolate Hills in Bohol',            done: true, completedDate: '24.03.25' },
       { title: 'Take part in a mini-triathlon' },
       { title: 'Hike in the Amazon rain forest' },
