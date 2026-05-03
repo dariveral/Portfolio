@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import styles from './About.module.css'
 import imgAbout from '../assets/image about.JPG'
-import calypsoAbout from '../assets/calypso about.png'
+import calypsoAbout from '../assets/calypso about.webp'
 import calyIcon from '../assets/Favicon/Caly icon white large.png'
 
 import stickerShootingStar from '../assets/stickers/metallic shooting star.png'
-import stickerDiscoBall    from '../assets/stickers/disco ball.png'
+import stickerDiscoBall    from '../assets/Stickers/disco ball.webp'
 import stickerCatStar      from '../assets/stickers/cat in star.png'
 import stickerPlanet       from '../assets/stickers/metallic planet.png'
 import stickerBlueStar     from '../assets/stickers/blue star.png'

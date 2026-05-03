@@ -1,5 +1,5 @@
 import styles from './AirbnbCaseStudy.module.css'
-import heroImg from '../assets/Airbnb Case Study/Header image.png'
+import heroImg from '../assets/Airbnb Case Study/Header image.webp'
 import caseStudyHome from '../assets/Airbnb Case Study/case study home.png'
 import homeMockup from '../assets/Airbnb Case Study/Home.png'
 import searchMockup from '../assets/Airbnb Case Study/Where Map.png'
@@ -13,7 +13,7 @@ import ddImg2 from '../assets/Airbnb Case Study/Where Map.png'
 import ddImg3 from '../assets/Airbnb Case Study/When.png'
 import ddImg4 from '../assets/Airbnb Case Study/Who.png'
 import resultsMockup from '../assets/Airbnb Case Study/results map.png'
-import greeceBg from '../assets/Airbnb Case Study/greece background.jpeg'
+import greeceBg from '../assets/Airbnb Case Study/greece background.webp'
 import caseStudyPdf from '../assets/Airbnb Case Study/Reimagining the Airbnb App in Landscape Mode on ioS.pdf'
 
 export default function AirbnbCaseStudy() {
@@ -55,7 +55,7 @@ export default function AirbnbCaseStudy() {
           <h2 className={styles.mockupHangHeading}>A new view opens up new journeys.</h2>
         </div>
         <div className={styles.mockupHangImgWrap}>
-          <img src={homeMockup} alt="Airbnb home screen in landscape" className={styles.mockupHangImg} />
+          <img src={homeMockup} alt="Airbnb home screen in landscape" className={styles.mockupHangImg} loading="lazy" />
         </div>
       </section>
 

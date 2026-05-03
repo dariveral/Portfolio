@@ -3,9 +3,9 @@ import styles from './WorkWithMe.module.css'
 
 import stickerCatTrick    from '../assets/stickers/cat trick.png'
 import stickerBlueRedStar from '../assets/stickers/blue red star.png'
-import stickerBolt        from '../assets/stickers/red blue silver bolt.png'
-import stickerBlueBall    from '../assets/stickers/blue ball.png'
-import stickerPinkPlaster from '../assets/stickers/pink plaster.png'
+import stickerBolt        from '../assets/Stickers/red blue silver bolt.webp'
+import stickerBlueBall    from '../assets/Stickers/blue ball.webp'
+import stickerPinkPlaster from '../assets/Stickers/pink plaster.webp'
 import stickerBlueStar    from '../assets/stickers/blue star.png'
 
 const MY_EMAIL = 'darleneriveral@icloud.com'
