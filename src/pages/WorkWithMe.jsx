@@ -73,11 +73,11 @@ export default function WorkWithMe() {
     <div className={styles.page}>
 
       {/* Stickers — only visible when side margins are wide enough */}
-      <img src={stickerCatTrick}    className={styles.sticker} style={{ width: 90,  top: 160, left:  20, transform: 'rotate(-12deg)', animationDelay: '0s'   }} alt="" aria-hidden="true" />
-      <img src={stickerBlueRedStar} className={styles.sticker} style={{ width: 70,  top: 500, right: 20, transform: 'rotate(-6deg)',  animationDelay: '0.5s' }} alt="" aria-hidden="true" />
+      <img src={stickerBlueBall}    className={styles.sticker} style={{ width: 90,  top: 500, left:  150, transform: 'rotate(-12deg)', animationDelay: '0s'   }} alt="" aria-hidden="true" />
+      <img src={stickerBlueRedStar} className={styles.sticker} style={{ width: 70,  top: 160, left:  20,    transform: 'rotate(-6deg)',  animationDelay: '0.5s' }} alt="" aria-hidden="true" />
       <img src={stickerBolt}        className={styles.sticker} style={{ width: 75,  top: 810, left: '38%',  transform: 'rotate(10deg)',  animationDelay: '1.2s' }} alt="" aria-hidden="true" />
-      <img src={stickerBlueBall}    className={styles.sticker} style={{ width: 80,  top: 150, right: 250,   transform: 'rotate(-8deg)',  animationDelay: '0.3s' }} alt="" aria-hidden="true" />
-      <img src={stickerPinkPlaster} className={styles.sticker} style={{ width: 90,  top: 600, left:  20,    transform: 'rotate(15deg)',  animationDelay: '0.7s' }} alt="" aria-hidden="true" />
+      <img src={stickerCatTrick}    className={styles.sticker} style={{ width: 80,  top: 150, right: 250,   transform: 'rotate(-8deg)',  animationDelay: '0.3s' }} alt="" aria-hidden="true" />
+      <img src={stickerPinkPlaster} className={styles.sticker} style={{ width: 90,  top: 750, right: 200,   transform: 'rotate(15deg)',  animationDelay: '0.7s' }} alt="" aria-hidden="true" />
       <img src={stickerBlueStar}    className={styles.sticker} style={{ width: 70,  top: 400, right: 20,    transform: 'rotate(-12deg)', animationDelay: '1.0s' }} alt="" aria-hidden="true" />
 
       <div className={styles.inner}>
