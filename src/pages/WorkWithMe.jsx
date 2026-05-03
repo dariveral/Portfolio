@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import styles from './WorkWithMe.module.css'
 
-import stickerCatTrick    from '../assets/Stickers/cat trick.webp'
-import stickerBlueRedStar from '../assets/Stickers/blue red star.webp'
-import stickerBolt        from '../assets/Stickers/red blue silver bolt.webp'
-import stickerBlueBall    from '../assets/Stickers/blue ball.webp'
-import stickerPinkPlaster from '../assets/Stickers/pink plaster.webp'
-import stickerBlueStar    from '../assets/Stickers/blue star.webp'
+import stickerCatTrick    from '../assets/stickers/cat trick.webp'
+import stickerBlueRedStar from '../assets/stickers/blue red star.webp'
+import stickerBolt        from '../assets/stickers/red blue silver bolt.webp'
+import stickerBlueBall    from '../assets/stickers/blue ball.webp'
+import stickerPinkPlaster from '../assets/stickers/pink plaster.webp'
+import stickerBlueStar    from '../assets/stickers/blue star.webp'
 
 const MY_EMAIL = 'darleneriveral@icloud.com'
 const TODAY = new Date().toISOString().split('T')[0]

@@ -4,14 +4,14 @@ import imgAbout from '../assets/image about.webp'
 import calypsoAbout from '../assets/calypso about.webp'
 import calyIcon from '../assets/Favicon/Caly icon white large.png'
 
-import stickerShootingStar from '../assets/Stickers/metallic shooting star.webp'
-import stickerDiscoBall    from '../assets/Stickers/disco ball.webp'
-import stickerCatStar      from '../assets/Stickers/cat in star.webp'
-import stickerPlanet       from '../assets/Stickers/metallic planet.webp'
-import stickerBlueStar     from '../assets/Stickers/blue star.webp'
-import stickerRedStar      from '../assets/Stickers/red star.webp'
-import stickerMetallicD    from '../assets/Stickers/metallic d.webp'
-import stickerCatHeart     from '../assets/Stickers/i _3 my cat.webp'
+import stickerShootingStar from '../assets/stickers/metallic shooting star.webp'
+import stickerDiscoBall    from '../assets/stickers/disco ball.webp'
+import stickerCatStar      from '../assets/stickers/cat in star.webp'
+import stickerPlanet       from '../assets/stickers/metallic planet.webp'
+import stickerBlueStar     from '../assets/stickers/blue star.webp'
+import stickerRedStar      from '../assets/stickers/red star.webp'
+import stickerMetallicD    from '../assets/stickers/metallic d.webp'
+import stickerCatHeart     from '../assets/stickers/i _3 my cat.webp'
 
 export default function About() {
   return (
