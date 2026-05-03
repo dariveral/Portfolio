@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import styles from './Navbar.module.css'
-import avatar from '../assets/avatar.jpg'
+import avatar from '../assets/avatar.webp'
 
 const DARK_HERO_ROUTES = ['/landscape-airbnb-on-ios']
 

@@ -1,5 +1,5 @@
 import styles from './BucketList.module.css'
-import bucketlistImg from '../assets/Bucket list/bucketlist.png'
+import bucketlistImg from '../assets/Bucket list/bucketlist.webp'
 
 const CATEGORIES = [
   {
