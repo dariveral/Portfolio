@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import styles from './Work.module.css'
-import caseStudyHome from '../assets/Airbnb Case Study/case study home.png'
-import airbnbHomeMockup from '../assets/Airbnb Case Study/Home.png'
-import airbnbSearchMockup from '../assets/Airbnb Case Study/Where Map.png'
+import caseStudyHome from '../assets/Airbnb Case Study/case study home.webp'
+import airbnbHomeMockup from '../assets/Airbnb Case Study/Home.webp'
+import airbnbSearchMockup from '../assets/Airbnb Case Study/Where Map.webp'
 
 const CASE_STUDIES = [
   {
