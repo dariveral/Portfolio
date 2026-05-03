@@ -29,6 +29,7 @@ const STAMPS = [
   { name: 'France',      img: stampFrance },
   { name: 'Greece',      img: stampGreece },
   { name: 'Italy',       img: stampItaly },
+  { name: 'Japan',       img: stampJapan },
   { name: 'Madeira',     img: stampMadeira },
   { name: 'Netherlands', img: stampNetherlands },
   { name: 'Philippines', img: stampPhilippines },
@@ -40,12 +41,10 @@ const STAMPS = [
   { name: 'Vatican',     img: stampVatican },
 ]
 
-const UN_COUNT = 14
-const TOTAL = 15
+const UN_COUNT = 15
+const TOTAL = 16
 
-const COMING_SOON = [
-  { name: 'Japan', img: stampJapan },
-]
+const COMING_SOON = []
 
 export default function TravelList() {
   return (
@@ -84,19 +83,21 @@ export default function TravelList() {
       </section>
 
       {/* Visiting Soon */}
-      <section className={styles.stampsSection}>
-        <div className={styles.stampsHeader}>
-          <p className={styles.stampsTitle}>Countries I'm visiting soon! 🤩</p>
-        </div>
-        <div className={styles.stampsGrid}>
-          {COMING_SOON.map(s => (
-            <div key={s.name} className={styles.stampItem}>
-              <img src={s.img} alt={s.name} className={styles.stampImg} />
-              <span className={styles.stampName}>{s.name}</span>
-            </div>
-          ))}
-        </div>
-      </section>
+      {COMING_SOON.length > 0 && (
+        <section className={styles.stampsSection}>
+          <div className={styles.stampsHeader}>
+            <p className={styles.stampsTitle}>Countries I'm visiting soon! 🤩</p>
+          </div>
+          <div className={styles.stampsGrid}>
+            {COMING_SOON.map(s => (
+              <div key={s.name} className={styles.stampItem}>
+                <img src={s.img} alt={s.name} className={styles.stampImg} />
+                <span className={styles.stampName}>{s.name}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
     </div>
   )
