@@ -2,7 +2,7 @@ import styles from './TravelList.module.css'
 
 import photoSaltLake   from '../assets/Travel list/salt lake.webp'
 import photoKawasan    from '../assets/Travel list/Kawasan.webp'
-import photoMilan      from '../assets/Travel list/Milan.webp'
+import photoJapanKimono from '../assets/Travel list/Japan kimono.webp'
 import photoRocinha    from '../assets/Travel list/Rocinha.webp'
 
 import stampAustria     from '../assets/Travel list/Austria.webp'
@@ -57,7 +57,7 @@ export default function TravelList() {
         <div className={styles.photoGrid}>
           <div className={styles.photoCell}><img src={photoSaltLake} alt="" /></div>
           <div className={styles.photoCell}><img src={photoKawasan} alt="" /></div>
-          <div className={styles.photoCell}><img src={photoMilan} alt="" /></div>
+          <div className={styles.photoCell}><img src={photoJapanKimono} alt="" /></div>
           <div className={styles.photoCell}><img src={photoRocinha} alt="" /></div>
         </div>
       </section>

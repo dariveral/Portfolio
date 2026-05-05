@@ -9,6 +9,7 @@ import WorkWithMe from './pages/WorkWithMe'
 import TravelList from './pages/TravelList'
 import BucketList from './pages/BucketList'
 import AirbnbCaseStudy from './pages/AirbnbCaseStudy'
+import NewCaseStudy from './pages/NewCaseStudy'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -29,6 +30,8 @@ export default function App() {
           <Route path="/landscape-airbnb-on-ios" element={<AirbnbCaseStudy />} />
           <Route path="/travel" element={<TravelList />} />
           <Route path="/bucket-list" element={<BucketList />} />
+          {/* DRAFT - not live */}
+          <Route path="/new-case-study" element={<NewCaseStudy />} />
         </Routes>
       </main>
       <Footer />
