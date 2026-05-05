@@ -85,7 +85,6 @@ export default function WorkWithMe() {
         {/* Hero */}
         <h1 className={styles.heading}>Let's build something together.</h1>
         <p className={styles.sub}>
-          I'm open to full-time roles, freelance projects, and collaborations.
           Book a chat to find a time that works, or send me a brief with details about your project.
         </p>
 
