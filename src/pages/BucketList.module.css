@@ -126,15 +126,24 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero { padding-top: 120px; padding-bottom: 32px; }
+  .hero { padding-bottom: 32px; }
   .heroHeading { font-size: 40px; }
   .categorySection { flex-direction: column; gap: 24px; padding: 32px; }
   .categoryTitle { font-size: 28px; }
 }
 
 @media (max-width: 480px) {
-  .hero { padding-top: 100px; padding-bottom: 24px; }
+  .hero { padding-bottom: 24px; }
   .heroHeading { font-size: 28px; }
   .categorySection { padding: 24px 20px; gap: 20px; }
   .categoryTitle { font-size: 22px; }
+}
+
+/* Match the About page's top spacing breakpoints */
+@media (max-width: 900px) {
+  .hero { padding-top: 120px; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding-top: 60px; }
 }
