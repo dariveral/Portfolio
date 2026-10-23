@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './About.module.css'
 import imgAbout from '../assets/image about cherry blossoms.webp'
+import imgAboutWide from '../assets/image about cherry blossoms wide.webp'
 import calypsoAbout from '../assets/calypso about.webp'
 import calyIcon from '../assets/Favicon/Caly icon white large.png'
 
@@ -29,7 +30,10 @@ export default function About() {
 
       {/* Hero */}
       <section className={styles.hero}>
-        <img src={imgAbout} alt="" className={styles.heroImgLeft} />
+        <picture className={styles.heroPicture}>
+          <source media="(min-width: 641px) and (max-width: 900px)" srcSet={imgAboutWide} />
+          <img src={imgAbout} alt="" className={styles.heroImgLeft} />
+        </picture>
         <h1 className={styles.heroHeading}>Get to know me</h1>
         <img src={calypsoAbout} alt="" className={styles.heroImgRight} />
       </section>

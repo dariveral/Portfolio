@@ -16,6 +16,11 @@
 }
 
 /* Hero */
+.heroPicture {
+  display: flex;
+  flex-shrink: 0;
+}
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -180,18 +185,21 @@
 /* Responsive */
 @media (max-width: 900px) {
   .sticker { display: none; }
-  .hero { flex-direction: column; align-items: center; padding-top: 120px; }
-  .heroImgLeft { width: 100%; height: 320px; }
-  .heroImgRight { width: 60%; height: 240px; align-self: center; }
+  .hero { flex-wrap: wrap; align-items: stretch; padding-top: 120px; }
+  .heroPicture { flex: 3 1 0; min-width: 0; }
+  .heroImgLeft { width: 100%; height: 320px; object-position: center 60%; }
+  .heroImgRight { flex: 2 1 0; min-width: 0; width: auto; height: 320px; align-self: auto; }
+  .heroHeading { order: 3; flex-basis: 100%; }
   .heroHeading { font-size: 44px; }
 }
 
 @media (max-width: 640px) {
   .page { padding: 20px 20px 80px; }
-  .hero { padding-top: 110px; gap: 24px; }
+  .hero { padding-top: 60px; gap: 24px; }
   .heroHeading { font-size: 32px; }
+  .heroPicture { flex: 1 1 0; }
   .heroImgLeft { height: 240px; }
-  .heroImgRight { display: none; }
+  .heroImgRight { flex: 1 1 0; height: 240px; }
   .about { flex-direction: column; gap: 12px; padding: 20px 0; }
   .aboutLabel { font-size: 28px; }
   .body { font-size: 20px; }
