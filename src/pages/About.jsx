@@ -22,7 +22,7 @@ export default function About() {
       <img src={stickerDiscoBall}    className={styles.sticker} style={{ width: 90,  top: 1100, left: '62%', transform: 'rotate(12deg)',   animationDelay: '0.8s' }} alt="" aria-hidden="true" />
       <img src={stickerBlueStar}     className={styles.sticker} style={{ width: 75,  top: 585,  left: '1%',  transform: 'rotate(-10deg)',  animationDelay: '1.4s' }} alt="" aria-hidden="true" />
       <img src={stickerCatStar}      className={styles.sticker} style={{ width: 160, top: 680,  left: '30%', transform: 'rotate(8deg)',    animationDelay: '0.4s' }} alt="" aria-hidden="true" />
-      <img src={stickerPlanet}       className={styles.sticker} style={{ width: 85,  top: 1000, right: '2%', transform: 'rotate(15deg)',   animationDelay: '1.1s' }} alt="" aria-hidden="true" />
+      <img src={stickerPlanet}       className={styles.sticker} style={{ width: 85,  top: 830,  right: '2%', transform: 'rotate(15deg)',   animationDelay: '1.1s' }} alt="" aria-hidden="true" />
       <img src={stickerRedStar}      className={styles.sticker} style={{ width: 65,  top: 1400, right: '2%', transform: 'rotate(-8deg)',   animationDelay: '0.6s' }} alt="" aria-hidden="true" />
       <img src={stickerMetallicD}    className={styles.sticker} style={{ width: 85,  top: 100,  left: '22%', transform: 'rotate(-5deg)', animationDelay: '1.7s' }} alt="" aria-hidden="true" />
       <img src={stickerCatHeart}     className={styles.sticker} style={{ width: 200, top: 240,  right: '10%', transform: 'rotate(-8deg)',   animationDelay: '0.9s' }} alt="" aria-hidden="true" />
@@ -45,10 +45,10 @@ export default function About() {
         </div>
         <div className={styles.aboutRight}>
           <p className={styles.body}>
-            I made the leap from law to UX/UI design — and I haven't looked back. After years in legal, I realised what I loved most was understanding how people navigate complex systems and finding ways to make that experience clearer, simpler, and more human.
+            I'm a product designer at a fintech. Most of my time goes into our motor product, where I work on making the flows simpler and easier to get through. I also design new products the business wants to try out, where I get a lot more freedom to play with how they look and work.
           </p>
           <p className={styles.body}>
-            Today I design digital products with a focus on user journey mapping and thoughtful interaction. I'm especially drawn to the role AI can play in making experiences feel more intuitive — and I'm always exploring how emerging tools can serve real people in meaningful ways.
+            Outside of work, reading and travelling are my biggest hobbies. I'm always planning my next trip and my next read. I love taking photos on film and trying as much local food as I can wherever I go. I'd love to get into running and hiking more (it's on my bucket list, so no excuses).
           </p>
         </div>
       </section>
