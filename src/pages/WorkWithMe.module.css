@@ -250,12 +250,3 @@
   .page { padding: 110px 20px 80px; }
   .inner { padding: 0; }
 }
-
-/* Match the About page's top spacing breakpoints */
-@media (max-width: 900px) {
-  .page { padding-top: 140px; }
-}
-
-@media (max-width: 640px) {
-  .page { padding-top: 80px; }
-}
