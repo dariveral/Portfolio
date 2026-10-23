@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import styles from './About.module.css'
-import imgAbout from '../assets/image about.webp'
+import imgAbout from '../assets/image about cherry blossoms.webp'
 import calypsoAbout from '../assets/calypso about.webp'
 import calyIcon from '../assets/Favicon/Caly icon white large.png'
 
