@@ -10,9 +10,11 @@ import stampBermuda     from '../assets/Travel list/Bermuda.webp'
 import stampBrazil      from '../assets/Travel list/Brazil.webp'
 import stampFrance      from '../assets/Travel list/France.webp'
 import stampGreece      from '../assets/Travel list/Greece.webp'
+import stampHungary     from '../assets/Travel list/Hungary.webp'
 import stampItaly       from '../assets/Travel list/Italy.webp'
 import stampJapan       from '../assets/Travel list/Japan.webp'
 import stampMadeira     from '../assets/Travel list/Madeira.webp'
+import stampMorocco     from '../assets/Travel list/Morocco.webp'
 import stampNetherlands from '../assets/Travel list/Netherlands.webp'
 import stampPhilippines from '../assets/Travel list/Philippines.webp'
 import stampSlovakia    from '../assets/Travel list/Slovakia.webp'
@@ -28,9 +30,11 @@ const STAMPS = [
   { name: 'Brazil',      img: stampBrazil },
   { name: 'France',      img: stampFrance },
   { name: 'Greece',      img: stampGreece },
+  { name: 'Hungary',     img: stampHungary },
   { name: 'Italy',       img: stampItaly },
   { name: 'Japan',       img: stampJapan },
   { name: 'Madeira',     img: stampMadeira },
+  { name: 'Morocco',     img: stampMorocco },
   { name: 'Netherlands', img: stampNetherlands },
   { name: 'Philippines', img: stampPhilippines },
   { name: 'Slovakia',    img: stampSlovakia },
@@ -41,8 +45,8 @@ const STAMPS = [
   { name: 'Vatican',     img: stampVatican },
 ]
 
-const UN_COUNT = 15
-const TOTAL = 16
+const UN_COUNT = 17
+const TOTAL = 18
 
 const COMING_SOON = []
 
